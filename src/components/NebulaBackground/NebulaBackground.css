@@ -1,0 +1,42 @@
+.nebula-bg {
+  position:       fixed;
+  top:            0;
+  left:           0;
+  width:          100%;
+  height:         100%;
+  pointer-events: none;
+  overflow:       hidden;
+  z-index:        -4;  /* behind black hole (-2) & stars (-1) */
+}
+
+.neb-cloud {
+  position: absolute;
+  top:      var(--y-start);
+  left:     var(--x-start);
+  width:    var(--blob-size);
+  height:   var(--blob-size);
+  background: radial-gradient(
+    circle at center,
+    rgba(var(--blob-color), 0.3),
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter:   blur(100px);
+  transform-origin: center;
+  mix-blend-mode: screen;
+  animation: nebula-drift var(--anim-dur) ease-in-out infinite alternate;
+  animation-delay: var(--anim-delay);
+}
+
+@keyframes nebula-drift {
+  from {
+    transform: translate(0, 0) scale(var(--scale-start));
+  }
+  to {
+    transform: translate(
+      calc(var(--x-end) - var(--x-start)),
+      calc(var(--y-end) - var(--y-start))
+    )
+    scale(var(--scale-end));
+  }
+}

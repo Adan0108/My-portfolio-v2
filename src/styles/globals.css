@@ -1,0 +1,30 @@
+/* ── GALAXY PALETTE & NEON OUTLINE ── */
+:root {
+  --galaxy-bg:      #080810;    /* deep navy-black */
+  --galaxy-fg:      #f0f0ff;    /* very pale periwinkle */
+  --galaxy-panel:   rgba(20,20,35,0.75); /* translucent card bg */
+  --galaxy-border:  #303045;    /* subtle dark border */
+  --galaxy-accent:  #ff55ff;    /* vibrant magenta */
+}
+
+@keyframes rgb-cycle {
+  0%   { text-shadow: 0 0 2px red,     0 0 6px yellow; }
+  33%  { text-shadow: 0 0 2px cyan,    0 0 6px blue;   }
+  66%  { text-shadow: 0 0 2px magenta, 0 0 6px purple; }
+  100% { text-shadow: 0 0 2px red,     0 0 6px yellow; }
+}
+
+.rgb-outline {
+  animation: rgb-cycle 3s linear infinite;
+}
+
+/* apply dark galaxy bg & bright text globally */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--galaxy-bg);
+  color:      var(--galaxy-fg);
+  font-family: sans-serif;
+}
+
+/* ── (your existing globals follow…) ── */

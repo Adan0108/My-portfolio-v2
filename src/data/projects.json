@@ -1,0 +1,23 @@
+[
+  {
+    "title": "IotBay E-commerce Project",
+    "imageSrc": "projects/project_1.png",
+    "description": "This is a project made to learn about how e-commerce(simnple) website works using plain javascript and html.",
+    "skills": ["Mongodb", "Express", "NodeJs"],
+    "source": "https://github.com/Adan0108/Iotbay-E-Commerce"
+  },
+  {
+    "title": "Badminton Booking Project",
+    "imageSrc": "projects/project_2.jpg",
+    "description": "This is a project made to learn about C# and MySQL.",
+    "skills": ["C#", "MySQL", "HTML", "ASP.NET"],
+    "source": "https://github.com/Adan0108/Badminton"
+  },
+  {
+    "title": "Porfolio Project",
+    "imageSrc": "projects/project_3.png",
+    "description": "This is a project made to learn the REACT framework and create first version profolio.",
+    "skills": ["React", "Javascript", "CSS"],
+    "source": "https://www.github.com"
+  }
+]

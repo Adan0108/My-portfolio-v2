@@ -1,0 +1,43 @@
+/* ─── Animated RGB Border ─── */
+@keyframes rgb-cycle {
+  0%,100% { border-color: #f00; }
+  33%      { border-color: #0f0; }
+  66%      { border-color: #00f; }
+}
+
+/* add this class to `<section className={`${styles.container} rgb-border`}>` */
+.rgb-border {
+  position:        relative;
+  border:          2px solid transparent;
+  border-radius:   1rem;
+  animation:       rgb-cycle 6s linear infinite;
+}
+
+/* ─── Section Container ─── */
+.container {
+  background:      rgba(10, 10, 20, 0.9);
+  padding:         3rem 5%;          /* space inside */
+  margin:          4rem 10%;         /* top/bottom 4rem, sides 10% */
+  box-shadow:      0 8px 24px rgba(0, 0, 0, 0.6);
+  color:           var(--color-text);
+  border-radius:   1rem;
+}
+
+/* ─── Section Title ─── */
+.title {
+  font-size:       3rem;
+  font-weight:     700;
+  text-transform:  uppercase;
+  letter-spacing:  0.05em;
+  text-align:      center;
+  margin-bottom:   2rem;
+}
+
+/* ─── Projects Grid ─── */
+.projects {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+  gap:             2rem;
+  margin-top:      2rem;
+}

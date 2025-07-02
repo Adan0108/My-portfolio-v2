@@ -1,0 +1,29 @@
+[
+  {
+    "role": "Software Engineer Student",
+    "organisation": "UTS",
+    "startDate": "Feburary, 2023",
+    "endDate": "Present",
+    "experiences": ["Worked on Badmonton booking website", "Creating Flight Booking app"],
+    "imageSrc": "history/google.png"
+  },
+  {
+    "role": "Software Engineer Intern",
+    "organisation": "OPTIK Consultance",
+    "startDate": "May, 2024",
+    "endDate": "Aug, 2024",
+    "experiences": ["Worked on create a mobile app for LMS", "Designed the both BE and FE"],
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "role": "Software Engineer",
+    "organisation": "Coming Soon",
+    "startDate": "Apr, Coming Soon",
+    "endDate": "Jun, Coming Soon",
+    "experiences": [
+      "Soon be review",
+      "Soon be review"
+    ],
+    "imageSrc": "history/netflix.png"
+  }
+]

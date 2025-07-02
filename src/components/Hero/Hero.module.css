@@ -1,0 +1,144 @@
+/* Hero.module.css */
+
+/* ─── Container ─── */
+.container {
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: space-between;
+  align-items:     center;
+  margin:          2rem 5%;
+  margin-top:      4rem;
+  gap:             3rem;
+  position:        relative;
+}
+
+/* ─── Left column ─── */
+.content {
+  flex:            1 1 45%;
+  max-width:       45%;
+  display:         flex;
+  flex-direction:  column;
+  gap:             2rem;
+  z-index:         1;
+}
+
+/* ─── Title ─── */
+.title {
+  font-size:       3.5rem;   /* slightly reduced */
+  font-weight:     900;
+  color:           #E5E5FF;  /* off-white */
+  margin:          0;
+}
+
+/* ─── Code panel ─── */
+.codeEditor {
+  background:      #2d2d2d;
+  border:          1px solid #444;
+  outline:         2px solid #62E0FF;
+  border-radius:   0.5rem;
+  overflow:        hidden;
+  width:           100%;
+  min-height:      300px;
+}
+
+.codeHeader {
+  display:         flex;
+  align-items:     center;
+  background:      #1e1e1e;
+  padding:         0.3rem 0.75rem;
+}
+
+.ctrl {
+  width:           0.8rem;
+  height:          0.8rem;
+  border-radius:   50%;
+  margin-right:    0.5rem;
+}
+
+.filename {
+  color:           #ccc;
+  font-family:     sans-serif;
+  font-size:       0.875rem;
+}
+
+.codeContent {
+  padding:         1rem;
+  color:           #ddd;
+  font-family:     'Fira Code', monospace;
+  font-size:       1.25rem;
+  line-height:     1.6;
+  white-space:     pre-wrap;
+  word-wrap:       break-word;
+  overflow-wrap:   break-word;
+}
+
+/* ─── Social Icons ─── */
+.socialIcons {
+  display:         flex;
+  gap:             1.5rem;
+  margin-top:      1.5rem;
+}
+
+.socialIcons img {
+  width:           2rem;
+  height:          2rem;
+  filter:          brightness(0) invert(1); /* white icons */
+  transition:      filter 0.2s;
+}
+
+.socialIcons a:hover img {
+  filter:          brightness(0.8) invert(1);
+}
+
+/* ─── Contact Button ─── */
+.contactBtn {
+  display:         inline-block;
+  background:      #1e3a8a;
+  color:           #fff;
+  text-decoration: none;
+  padding:         0.5rem 1rem;
+  border-radius:   9999px;
+  font-size:       1rem;
+  font-weight:     600;
+  transition:      background 0.2s, transform 0.2s;
+  max-width:       180px;
+}
+
+.contactBtn:hover {
+  background:      #3740b0;
+  transform:       scale(1.05);
+}
+
+/* ─── Image Wrapper ─── */
+.imageWrapper {
+  flex:            1 1 45%;
+  max-width:       45%;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+}
+
+.heroImg {
+  width:           100%;
+  max-width:       500px;
+  border-radius:   50%;
+  animation:       floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(10px); }
+}
+
+/* ─── Mobile ─── */
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items:    center;
+  }
+  .imageWrapper,
+  .heroImg {
+    width:       80%;
+    max-width:   none;
+  }
+}
